@@ -8,13 +8,13 @@ int main()
 	int i,m,o;
 	int b=0;
 	double n,p; /*n表示将区间分成的份数*/
-	double c,y0;/*b、c分别是区间的上下限*/
+	double y0=2.71828;
 	double Xn,Yn,Xn1,Yn1,Tn1;
 	double h=0.001;
 	double K1,K2,K3,K4;
 	double arr1[100000];  //这两个数组用于后面将数据导入excel
 	double arr2[100000];
-	
+/*	
 	printf("Whether c is int or not?Yes input 1,no input 0.\n");
 	scanf("%d",&m);
 	
@@ -33,7 +33,8 @@ int main()
 	
 	printf("Please enter the value of 'y0':");
 	scanf("%lf",&y0);
-
+*/
+	double c=pow(25,2.71828);
 	n=(c-b)/h;
 	Xn=b;
 	Yn=y0;
@@ -154,4 +155,3 @@ void writeExcel(double *arr1,double*arr2)
 	fclose(fp);
 	printf("It had removed the value in excel.");
 }
-
